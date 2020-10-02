@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            p,h1,h3{
+                color: blanchedalmond;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is my first project on flask</p>
+        <h1>I will Try to make it best as much as i can</h1>
+        <h1>Welcome to my space {{n}}</h1>
+        {% if d %}
+            {% for key,value in d.items() %}
+            <h3>{{ key }} : {{ value }}</h3>
+            {% endfor %}
+        {% endif %}
+        <a href="/logout/">LOGOUT</a>
+    </body>
+</html>

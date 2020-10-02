@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            form{
+                margin-left: 20%;
+                margin-top: 10%;
+            }
+            label{
+                font-size: 30px;
+                font-family: 'Courier New', Courier, monospace;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body style="background:linear-gradient(coral,#123456);">
+        {% include "index.html" %}
+        {% block head %}
+        {% endblock %}
+        <h1 style="color: rgb(17, 16, 16);font-size: 25px;">{{error}}</h1>
+        <form method="POST" action="/aftersignup/">
+            <label>Enter your firstname</label>
+            <input type="text" name="fname"><br><br>
+            <label>Enter your lastname</label>
+            <input type="text" name="lname"><br><br>
+            <label>Enter your email</label>
+            <input type="email" name="email"><br><br>
+            <label>Enter your password</label>
+            <input type="password" name="passwd"><br><br>
+            <label>Enter your password again</label>
+            <input type="password" name="cpasswd"><br><br>
+            <label>Choose your gender</label>
+            <input type="radio" name="gender" value="male"><label>Male</label><input type="radio" value="female" name="gender"><label>FEMALE</label><br><br>
+
+            <input type="submit" value="SIGNUP">
+        </form>
+    </body>
+</html>

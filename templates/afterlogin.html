@@ -1,0 +1,26 @@
+<html>
+    <head>
+    <style>
+        a{
+            text-decoration: none;
+            font-size: 40px;
+            color: black;
+        }
+        li{
+            display: inline;
+            padding: 25px;
+        }
+        a:hover{
+            background-color: white;
+        }
+    </style>
+    </head>
+    <h1>{{error}}</h1>
+    <body style="background:linear-gradient(coral,#123456);">
+        <form method="POST" action="/getmovie/">
+            <input type="text" name="title"><br>
+            <input type="submit" value="SUBMIT">
+        </form>
+        <a href="/logout/">LOGOUT</a>
+    </body>
+</html>

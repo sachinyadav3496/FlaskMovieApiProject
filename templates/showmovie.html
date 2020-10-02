@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            .key{
+                color: cadetblue;
+                font-size: 20px;
+                font-style: italic;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .value{
+                color: darkslategrey;
+                font-size: 30px;
+                font-style: italic;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        {% for key,value in data.items() %}
+        <label class="key">{{ key }} </label>: <label class="value">{{ value }}</label><br>
+        {% endfor %}
+        <img src={{poster}} height="40%" width="20%">
+    </body>
+</html>

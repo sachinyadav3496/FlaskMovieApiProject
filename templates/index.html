@@ -1,0 +1,35 @@
+{% block head %}
+<html>
+    <head>
+        <style>
+            a{
+                text-decoration: none;
+                font-size: 40px;
+                color: black;
+            }
+            li{
+                display: inline;
+                padding: 25px;
+            }
+            a:hover{
+                background-color: white;
+            }
+            body{
+                background-image: url('static/one.jpeg');
+            }
+        </style>
+    </head>
+    <body >
+        <div>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="/login/">LOGIN</a></li>
+                <li><a href="/signup/">SIGNUP</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="/forgot_password/">Forgotpassword</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
+{% endblock %}
