@@ -21,7 +21,7 @@ def index():     #/ --> domain --> localhost
 def home():
     return "<h1 style='color:red'>This is my first project</h1>"
 
-#/home/simran -->Welcome simran
+#/home/sachin -->Welcome si
 #/home/nitin --> Welcome Nitin
 #/home/gaurav --> Welcome gaurav
 
@@ -33,7 +33,7 @@ def showname(name):            #<int:age> --> age = variable (integer) #<float:f
 #leftside--> name-->key and rightside --> name--> value
 
 
-#browser --> localhost/simran/43/44/32
+#browser --> localhost/sachin/43/44/32
 #    Per<40 --> F
 #40<=per<50 --> D
 #50<=per<60 --> B
@@ -71,7 +71,7 @@ def marks(name,m1,m2,m3):
 #jinja language --> Dynamic html pages
 #jinja --> templating engine python
 #jinja --> {{}}
-#python file --> name="simran", html file --> {{name}}
+#python file --> name="sachin", html file --> {{name}}
 """if else --> {% if condition %}
                 content
                 {% endif %}

@@ -108,7 +108,7 @@ def logout():
     #return resp
     return render_template("login.html")
 
-#{"fname":"simran","lname":"grover","email":"simran@gmail.com","passwd":"adminadmin"}
+#{"fname":"sachin","lname":"yadav","email":"sachin@gmail.com","passwd":"adminadmin"}
 #session and cookies, api
 #project
 #store password in encrypted form!!!!
@@ -143,9 +143,9 @@ def get_movie():
 
 @app.route("/forgot_password/")
 def forgot_password():
-    from_email = "simrangrover5@gmail.com"
-    to_email = "simrangrover5@gmail.com"
-    password = "7742524047sima"
+    from_email = "your email"
+    to_email = "your email"
+    password = "your password"
 
     message = MIMEMultipart("alternative")
     message["Subject"] = "Mail through Python script"
